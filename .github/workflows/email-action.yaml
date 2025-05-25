@@ -1,0 +1,16 @@
+name: Email Action Trigger
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: 24ds1000065@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
